@@ -1,6 +1,10 @@
-# Práctica 2da fase
+# Práctica 2da fase 
+
+
 
 Katerine Cruz Valdivia.
+
+
 CUI: 20111701
 
 Compilar con:
@@ -34,13 +38,13 @@ case GLUT_KEY_F4:
 ```
 ### Proyección Ortogonal
 
-![Image ortho view](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/ortho2.png)
+![Image ortho view](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/img/ortho2.png)
 
 ### Proyección Perspectiva
 
-![Image perspective view](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/perspec1.png)
+![Image perspective view](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/img/perspec1.png)
 
-![Image perspective view](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/perspec2.png)
+![Image perspective view](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/img/perspec2.png)
 
 
 ## Programar otros modos de movimiento de cámara como son el MODO PAN o el MODO TRÍPODE.
@@ -97,7 +101,7 @@ Se le asigna una tecla para activar el modo PAN
 		break;
 ```		
 		
-![Image pan mode](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/pan.png)
+![Image pan mode](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/img/pan.png)
 
 
 ### MODO TRIPODE 
@@ -139,6 +143,6 @@ case GLUT_KEY_F5:
 		break;
 ```		
 
-![Image tripode mode](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/tripode.png)
+![Image tripode mode](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/img/tripode.png)
 
 
