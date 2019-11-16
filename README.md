@@ -9,7 +9,8 @@ g++ main.cpp camera.cpp -o main vector_tools.cpp -lglut -lGL -lGLU
 
 ```
 
-## Dotar al programa de una tecla que permita cambiar el modo de proyección entre ORTOGONAL y PERSPECTIVA.
+## Darle al programa de una tecla que permita cambiar el modo de proyección entre ORTOGONAL y PERSPECTIVA .
+Cambios de perspectiva de la camara (ortogonal a perspectiva) 
 
 En la función special Keys para cambiar de ortogonal a Perspectiva:
 
@@ -32,7 +33,6 @@ case GLUT_KEY_F4:
 		break;  
 ```
 ### Proyección Ortogonal
-![Image ortho view ](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/ortho1.png)
 
 ![Image ortho view](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/ortho2.png)
 
