@@ -120,7 +120,7 @@ void Tripode(int x, int y)
 	glutPostRedisplay();
 }
 ```	
-Se declara en camera.h e implementa en camera.cpp
+Se declara en camera.h e implementa en camera.cpp.
 Cambiará el angulo de la camara	
 ```		
 void PitchCamera( camera *thisCamera, float angle )
