@@ -1,12 +1,3 @@
-/**
- *    > Author:   whpointz
- *    > Mail:     506273980@qq.com
- *    > Github:   https://www.github.com/whpointz
- *    > Description:
- *
- *    > Created Time: 2017/06/24 13:56:56
- **/
-
 
 #ifndef _TREE_HPP_
 #define _TREE_HPP_
@@ -62,24 +53,24 @@ public:
 	{
 		depth = depth - 1;
 
-		//·µ»Ø¿ÕÖ¸Õë
+		//è¿”å›žç©ºæŒ‡é’ˆ
 		if (depth < 0) return nullptr;
 
-		//¹¹ÔìrootÔªËØ£¬¸ù¾ÝËÄ¸ö×ÓÊ÷À´¸üÐÂroot
+		//æž„é€ rootå…ƒç´ ï¼Œæ ¹æ®å››ä¸ªå­æ ‘æ¥æ›´æ–°root
 		TreeNode<T, Child_num>* root = new TreeNode<T, Child_num>;
 		T mid = T((min.x + max.x) / 2, (min.y + max.y) / 2);
 
-		//¸üÐÂmax min
+		//æ›´æ–°max min
 		root->_max = max;
 		root->_min = min;
 
-		//¸üÐÂËÄ¸ö×ÓÊ÷
+		//æ›´æ–°å››ä¸ªå­æ ‘
 		root->_children[0] = BuildTree(depth, min, mid);
 		root->_children[1] = BuildTree(depth, T(mid.x, min.y), T(max.x, mid.y));
 		root->_children[2] = BuildTree(depth, T(min.x, mid.y), T(mid.x, max.y));
 		root->_children[3] = BuildTree(depth, mid, max);
 
-		//¸üÐÂdata
+		//æ›´æ–°data
 		if (root->_children[0] != NULL)
 		{
 			//the root data is the average num of the 4 children's data.
@@ -92,7 +83,7 @@ public:
 			Mat my_mat(image_data, Rect(int(min.x), int(min.y), int(max.x) - int(min.x), int(max.y) - int(min.y)));//(beginx beginy lenx leny)
 			Mat channels[3];
 			split(my_mat, channels);//get the 3 channels of the Rect and RGB is the mean of the different channels of the Rect
-			root->_data.x = mean(channels[0]).val[0];//ÇóÈ¡ËãÊõÆ½¾ùÖµ
+			root->_data.x = mean(channels[0]).val[0];//æ±‚å–ç®—æœ¯å¹³å‡å€¼
 			root->_data.y = mean(channels[1]).val[0];
 			root->_data.z = mean(channels[2]).val[0];
 			//cout << glm::to_string(root->_data) << endl<<endl;
