@@ -12,6 +12,6 @@ Y la profundidad diferente del quadtree:
 
 ![mark](QuadTree/ans.jpg)
 
-![Image Paisaje view ](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/3raFase/QuadTree/src/kite.jpg)
+![Image Paisaje view ](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/3raFase/QuadTree/src/Kite.jpg)
 
-![Image resultados view](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/ortho2.png)
+![Image resultados view](https://github.com/katycyta/Computacion-Grafica-2019/blob/master/3raFase/QuadTree/ans.jpg)
