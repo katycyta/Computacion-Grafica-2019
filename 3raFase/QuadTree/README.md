@@ -1,6 +1,6 @@
 
 # Desarrollado
-- `Opencv 3.2.2` 
+-´Opencv 3.2.2
 - `glm`
 
 # resultado
