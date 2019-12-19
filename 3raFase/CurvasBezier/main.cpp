@@ -66,7 +66,7 @@ double interpolate(Point* f[], int xi, int n)
     return result;
 }
 
-int escolherPonto(int x,int y)
+int choosePoint(int x,int y)
 {
     int distancia1,distancia2,distancia3,distancia4;
     distancia1=sqrt(((x - p0->x)*(x - p0->x))+((y - p0->y)*(y - p0->y)));
@@ -132,7 +132,7 @@ void mouse(int button, int state, int mousex, int mousey)
 
     if(button ==GLUT_LEFT_BUTTON && state == GLUT_DOWN)
     {
-        int ponto = escolherPonto(mousex, 600-mousey);
+        int ponto = choosePoint(mousex, 600-mousey);
         switch(ponto)
         {
         case 1:
@@ -162,7 +162,7 @@ void mouse(int button, int state, int mousex, int mousey)
 
 }
 
-void desenha(void) {
+void draw(void) {
     glClear(GL_COLOR_BUFFER_BIT);
 
     glMatrixMode(GL_PROJECTION);
@@ -214,11 +214,11 @@ int main(int argc, char *argv[])
     glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
     glutInitWindowSize(800,600);
     glutInitWindowPosition(10,10);
-    glutCreateWindow("APLICAÇÂO BEZIER");
+    glutCreateWindow("APLICACION BEZIER");
     glClearColor(0,0,1,0);
     glClear(GL_COLOR_BUFFER_BIT);
 
-    glutDisplayFunc(desenha);
+    glutDisplayFunc(draw);
     glutMouseFunc(mouse);
     glutMainLoop();
 }
