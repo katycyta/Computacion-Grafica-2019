@@ -3,6 +3,10 @@
 - `Opencv 3.2.2`
 - `glm`
 
+```
+g++ -Wall -o prueba main.cpp `pkg-config --cflags --libs opencv`
+```
+
 # resultado
 Una estructura de datos simple en 2D.
 
